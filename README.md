@@ -9,6 +9,7 @@ Source for [priyanshmathur.com](https://priyanshmathur.com), the portfolio of Pr
 | Path | What it is |
 |---|---|
 | [`PLAN.md`](PLAN.md) | The redesign brief: verdict on the current site, positioning, sitemap, case-study template, three creative directions, and the build loop. |
+| [`work/loom.md`](work/loom.md) | Case study: Loom, the production ledger built for my father's bed-cover factory. Follows the case-study template in the plan. |
 | [`projects/distromap/`](projects/distromap/) | DistroMap, a tool that maps where a product's target users already spend time across Indian surfaces and turns that into an embedded-distribution playbook. Its [README](projects/distromap/README.md) is written as a PRD: problem, users, job to be done, success metric, scope, non-goals, risks. |
 
 ## Status
