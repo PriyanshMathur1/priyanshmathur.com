@@ -64,7 +64,7 @@ def with_images(h, mode):
 
 deploy = (with_images(html, "deploy")
           .replace('<meta name="theme-color" content="#0B141B">', '<meta name="theme-color" content="#0B141B">\n<link rel="preload" as="image" href="assets/hero-agent.webp" media="(min-width: 900px)">')
-          .replace("{{TITLE}}", "Priyansh Mathur · Growth product manager")
+          .replace("{{TITLE}}", "Priyansh Mathur | Growth Product Manager, Bengaluru")
           .replace("{{RESUME}}", "/resume"))
 (DIST / "index.html").write_text(deploy)
 
