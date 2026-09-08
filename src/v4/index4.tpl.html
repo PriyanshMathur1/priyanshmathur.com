@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Priyansh Mathur · Growth product manager</title>
+<title>{{TITLE}}</title>
 <meta name="description" content="Priyansh Mathur, growth product manager in Bengaluru. Marketing roots, own ecommerce stores, organic growth, then fintech. Work, player profile and how to reach me.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Priyansh Mathur · Growth product manager">
@@ -12,7 +12,6 @@
 <meta property="og:image" content="https://priyanshmathur.com/assets/og.jpg">
 <link rel="canonical" href="https://priyanshmathur.com/">
 <meta name="theme-color" content="#0B141B">
-<link rel="preload" as="image" href="assets/hero-agent.webp" media="(min-width: 900px)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Crect width='30' height='30' fill='%230B141B'/%3E%3Cpath d='M3 4h10l9 22h-6L9 9H3z' fill='%23FF4655'/%3E%3Cpath d='M17 4h10v6h-5l-5-6z' fill='%23FF4655' opacity='.7'/%3E%3Cpath d='M27 12v14h-6l-4-9 4-5z' fill='%23ECE8E1'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,7 +102,7 @@ section{position:relative;scroll-margin-top:72px}
 /* ---------- hero ---------- */
 .hero{background:var(--navy);overflow:hidden;min-height:calc(100svh - 64px);display:grid;align-items:center;isolation:isolate}
 .hero .art{position:absolute;inset:0;z-index:0;pointer-events:none}
-.hero .env{position:absolute;inset:0;background:url("assets/hero-env.webp") center right / cover no-repeat;transform:translate(calc(var(--mx,0) * -10px),calc(var(--my,0) * -6px)) scale(1.04);transition:transform 160ms linear;opacity:.92}
+.hero .env{position:absolute;inset:0;background:url("{{IMG:hero-env}}") center right / cover no-repeat;transform:translate(calc(var(--mx,0) * -10px),calc(var(--my,0) * -6px)) scale(1.04);transition:transform 160ms linear;opacity:.92}
 .hero .env::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy) 0%,color-mix(in srgb,var(--navy) 88%,transparent) 30%,color-mix(in srgb,var(--navy) 30%,transparent) 58%,color-mix(in srgb,var(--navy) 10%,transparent) 100%),linear-gradient(180deg,color-mix(in srgb,var(--navy) 60%,transparent),transparent 30%,transparent 70%,var(--navy))}
 .hero .agent{position:absolute;right:max(var(--gutter),calc((100vw - var(--max)) / 2 + var(--gutter) - 40px));bottom:0;height:min(92%,880px);width:auto;transform:translate(calc(var(--mx,0) * 18px),calc(var(--my,0) * 8px));transition:transform 160ms linear;filter:drop-shadow(0 30px 40px rgba(0,0,0,.55))}
 .hero .agent img{height:100%;width:auto;display:block}
@@ -254,7 +253,7 @@ section{position:relative;scroll-margin-top:72px}
 
 /* ---------- contact ---------- */
 .contact{padding-block:var(--sec);background:var(--navy);overflow:hidden;isolation:isolate}
-.contact .bg{position:absolute;inset:0;z-index:-1;background:url("assets/contact.webp") right 8% top / auto 108% no-repeat;opacity:.55}
+.contact .bg{position:absolute;inset:0;z-index:-1;background:url("{{IMG:contact}}") right 8% top / auto 108% no-repeat;opacity:.55}
 @media (max-width:899px){.contact .bg{opacity:.22;background-position:right -30% top}}
 .contact .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy) 0%,var(--navy) 38%,color-mix(in srgb,var(--navy) 55%,transparent) 70%,color-mix(in srgb,var(--navy) 30%,transparent)),linear-gradient(180deg,var(--navy),transparent 25%,transparent 75%,var(--navy))}
 .contact h2{font-size:clamp(52px,9vw,120px);margin-top:var(--s4)}
@@ -304,7 +303,7 @@ footer p{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(-
         <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a class="cv" href="/resume">Résumé</a></li>
+        <li><a class="cv" href="{{RESUME}}">Résumé</a></li>
       </ul>
     </nav>
   </div>
@@ -317,7 +316,7 @@ footer p{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(-
       <div class="env"></div>
       <svg class="contours" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" fill="none" stroke="#ECE8E1" stroke-width="1"><path d="M-40 640c180-90 300-40 420-120s180-260 340-250 240 150 420 120 260-190 500-130"/><path d="M-40 700c180-90 320-60 440-140s200-230 360-220 240 130 420 100 260-160 500-110"/><path d="M-40 760c190-80 330-70 450-150s210-210 370-200 250 120 430 90 260-140 500-90"/><path d="M-40 820c200-70 340-80 460-160s220-190 380-180 250 110 440 80 260-120 500-70"/><circle cx="1180" cy="260" r="180" stroke-dasharray="3 9"/><circle cx="1180" cy="260" r="260" stroke-dasharray="2 14" opacity=".6"/></svg>
       <div class="num">01</div>
-      <div class="agent"><img src="assets/hero-agent.webp" width="820" height="1192" alt="" fetchpriority="high" decoding="async"></div>
+      <div class="agent"><img src="{{IMG:hero-agent}}" width="820" height="1192" alt="" fetchpriority="high" decoding="async"></div>
       <div class="grain"></div>
       <div class="scan"></div>
     </div>
@@ -336,7 +335,7 @@ footer p{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(-
         </div>
         <a class="cue" href="#work">Scroll to deploy</a>
       </div>
-      <div class="mobile-art" aria-hidden="true"><img src="assets/hero-mobile.webp" width="720" height="1260" alt="" loading="lazy" decoding="async"></div>
+      <div class="mobile-art" aria-hidden="true"><img src="{{IMG:hero-mobile}}" width="720" height="1260" alt="" loading="lazy" decoding="async"></div>
     </div>
   </section>
 
@@ -355,7 +354,7 @@ footer p{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(-
 
       <ul class="missions">
         <li class="card rv">
-          <a class="shot" href="#m-dezerv" aria-label="Dezerv embedded portfolio tracker, read the decisions"><img src="assets/card-dezerv.webp" width="960" height="600" alt="" loading="lazy" decoding="async"><span class="ov">Where they<br>already<br>were</span></a>
+          <a class="shot" href="#m-dezerv" aria-label="Dezerv embedded portfolio tracker, read the decisions"><img src="{{IMG:card-dezerv}}" width="960" height="600" alt="" loading="lazy" decoding="async"><span class="ov">Where they<br>already<br>were</span></a>
           <p class="cap"><span><span class="n">01</span> / Embedded distribution</span><span class="a" aria-hidden="true">↗</span></p>
           <h3>Dezerv: build on a road people already take.</h3>
           <p class="kind">Product management, fintech, partnerships</p>
@@ -390,7 +389,7 @@ footer p{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(-
         </li>
 
         <li class="card rv" style="--d:60ms">
-          <a class="shot" href="https://github.com/PriyanshMathur1/priyanshmathur.com/blob/main/work/loom.md" rel="noopener" aria-label="Loom case study on GitHub"><img src="assets/card-loom.webp" width="960" height="600" alt="" loading="lazy" decoding="async"><span class="ov">Where did<br>that quantity<br>go?</span></a>
+          <a class="shot" href="https://github.com/PriyanshMathur1/priyanshmathur.com/blob/main/work/loom.md" rel="noopener" aria-label="Loom case study on GitHub"><img src="{{IMG:card-loom}}" width="960" height="600" alt="" loading="lazy" decoding="async"><span class="ov">Where did<br>that quantity<br>go?</span></a>
           <p class="cap"><span><span class="n">03</span> / Side build</span><span class="a" aria-hidden="true">↗</span></p>
           <h3>Loom: a production ledger for a bed-cover factory.</h3>
           <p class="kind">Solo build, Postgres, Next.js, Supabase</p>
@@ -400,7 +399,7 @@ footer p{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(-
         </li>
 
         <li class="card rv" style="--d:160ms">
-          <a class="shot" href="https://github.com/PriyanshMathur1/priyanshmathur.com/tree/main/projects/distromap" rel="noopener" aria-label="DistroMap on GitHub"><img src="assets/card-distromap.webp" width="960" height="600" alt="" loading="lazy" decoding="async"><span class="ov">Where do<br>your users<br>already live?</span></a>
+          <a class="shot" href="https://github.com/PriyanshMathur1/priyanshmathur.com/tree/main/projects/distromap" rel="noopener" aria-label="DistroMap on GitHub"><img src="{{IMG:card-distromap}}" width="960" height="600" alt="" loading="lazy" decoding="async"><span class="ov">Where do<br>your users<br>already live?</span></a>
           <p class="cap"><span><span class="n">04</span> / Open build, v0</span><span class="a" aria-hidden="true">↗</span></p>
           <h3>DistroMap: an embedded-distribution playbook tool.</h3>
           <p class="kind">PRD, curated dataset, deterministic scoring</p>
@@ -415,7 +414,7 @@ footer p{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(-
   <section class="about" id="about" aria-labelledby="about-h">
     <div class="wrap">
       <div class="grid">
-        <div class="frame bracket rv"><img src="assets/about.webp" width="880" height="1320" alt="Illustrated portrait of Priyansh Mathur, arms crossed, in a dark jacket with red trim" loading="lazy" decoding="async"><div class="badge"><p class="micro"><b>Player profile</b><br>Priyansh Mathur<br>Bengaluru, India</p></div></div>
+        <div class="frame bracket rv"><img src="{{IMG:about}}" width="880" height="1320" alt="Illustrated portrait of Priyansh Mathur, arms crossed, in a dark jacket with red trim" loading="lazy" decoding="async"><div class="badge"><p class="micro"><b>Player profile</b><br>Priyansh Mathur<br>Bengaluru, India</p></div></div>
         <div>
           <p class="tag rv"><span class="n">02</span> <span class="alt">Player profile</span></p>
           <h2 id="about-h" class="rv" style="--d:80ms">I didn't take the straight line.</h2>
@@ -458,9 +457,9 @@ footer p{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(-
             <p style="margin-top:var(--s5)"><a class="link" href="https://www.instagram.com/priyanshmathurr/" rel="me noopener">A little more of life <span class="a" aria-hidden="true">↗</span></a></p>
           </div>
           <ul class="shots">
-            <li class="rv" style="--d:60ms"><a href="https://www.instagram.com/priyanshmathurr/" rel="me noopener"><img src="assets/mountains.webp" width="720" height="900" alt="Priyansh on a rock in front of snow-covered mountains, prayer flags overhead" loading="lazy" decoding="async"><span class="cap">Mountains <small>April 2024</small></span></a></li>
-            <li class="rv" style="--d:180ms"><a href="https://www.instagram.com/priyanshmathurr/" rel="me noopener"><img src="assets/hills.webp" width="720" height="900" alt="Priyansh with two friends on a hillside under prayer flags" loading="lazy" decoding="async"><span class="cap">Hills <small>February 2024</small></span></a></li>
-            <li class="rv" style="--d:300ms"><a href="https://www.instagram.com/priyanshmathurr/" rel="me noopener"><img src="assets/coast.webp" width="720" height="900" alt="Priyansh standing on a rock above a grey sea, palm trees behind" loading="lazy" decoding="async"><span class="cap">Coast <small>April 2023</small></span></a></li>
+            <li class="rv" style="--d:60ms"><a href="https://www.instagram.com/priyanshmathurr/" rel="me noopener"><img src="{{IMG:mountains}}" width="720" height="900" alt="Priyansh on a rock in front of snow-covered mountains, prayer flags overhead" loading="lazy" decoding="async"><span class="cap">Mountains <small>April 2024</small></span></a></li>
+            <li class="rv" style="--d:180ms"><a href="https://www.instagram.com/priyanshmathurr/" rel="me noopener"><img src="{{IMG:hills}}" width="720" height="900" alt="Priyansh with two friends on a hillside under prayer flags" loading="lazy" decoding="async"><span class="cap">Hills <small>February 2024</small></span></a></li>
+            <li class="rv" style="--d:300ms"><a href="https://www.instagram.com/priyanshmathurr/" rel="me noopener"><img src="{{IMG:coast}}" width="720" height="900" alt="Priyansh standing on a rock above a grey sea, palm trees behind" loading="lazy" decoding="async"><span class="cap">Coast <small>April 2023</small></span></a></li>
           </ul>
         </div>
       </div>
@@ -475,7 +474,7 @@ footer p{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(-
       <p class="body rv" style="--d:160ms">If you've got one of the three in mind, say hello. Email gets answered faster than LinkedIn, and coffee in Bengaluru faster than both.</p>
       <div class="actions rv" style="--d:240ms">
         <a class="btn" href="mailto:priyanshmathur2@gmail.com">Say hello <span class="a" aria-hidden="true">↗</span></a>
-        <a class="btn ghost" href="/resume">Résumé</a>
+        <a class="btn ghost" href="{{RESUME}}">Résumé</a>
       </div>
       <ul class="comms rv" style="--d:320ms">
         <li><a href="mailto:priyanshmathur2@gmail.com">priyanshmathur2@gmail.com</a></li>
@@ -495,7 +494,7 @@ footer p{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(-
   </div>
 </footer>
 
-
+{{SPRITE}}
 
 <script>
 (function(){

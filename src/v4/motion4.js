@@ -1,0 +1,24 @@
+const { chromium } = require('playwright');
+(async () => {
+  const b = await chromium.launch({executablePath:'/opt/pw-browsers/chromium'});
+  const p = await b.newPage({viewport:{width:1440,height:900}});
+  const errs=[]; p.on('pageerror',e=>errs.push(e.message)); p.on('console',m=>{if(m.type()==='error')errs.push(m.text())});
+  await p.goto('file://'+process.cwd()+'/dist4/test.html'); await p.waitForTimeout(300);
+  await p.screenshot({path:'m4-load.png'});
+  await p.waitForTimeout(1200);
+  await p.mouse.move(1100,400); await p.waitForTimeout(300);
+  const r1=await p.evaluate(()=>({mx:document.querySelector('.hero').style.getPropertyValue('--mx'),cur:!!document.querySelector('.cur.show'),cs:getComputedStyle(document.querySelector('.cur')).opacity,cursor:getComputedStyle(document.body).cursor}));
+  await p.mouse.move(200,640); await p.waitForTimeout(400);
+  const r2=await p.evaluate(()=>({on:document.querySelector('.cur').className}));
+  await p.screenshot({path:'m4-hover.png',clip:{x:0,y:520,width:720,height:200}});
+  await p.mouse.wheel(0,900); await p.waitForTimeout(900);
+  const r3=await p.evaluate(()=>({off:document.querySelectorAll('.rv-off').length,inn:document.querySelectorAll('.rv-in').length,cur:[...document.querySelectorAll('.nav a[aria-current]')].map(a=>a.textContent)}));
+  await p.mouse.wheel(0,600); await p.waitForTimeout(900);
+  const r4=await p.evaluate(()=>({go:!!document.querySelector('.go'),bar:getComputedStyle(document.querySelector('.bars [data-hi] i')).transform}));
+  await p.click('.card summary'); await p.waitForTimeout(500);
+  await p.screenshot({path:'m4-details.png'});
+  await p.evaluate(()=>scrollTo(0,document.body.scrollHeight)); await p.waitForTimeout(1200);
+  const r5=await p.evaluate(()=>({off:document.querySelectorAll('.rv-off').length,cur:[...document.querySelectorAll('.nav a[aria-current]')].map(a=>a.textContent)}));
+  console.log(JSON.stringify({r1,r2,r3,r4,r5,errs}));
+  await b.close();
+})();
