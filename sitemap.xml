@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://priyanshmathur.com/</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <image:image><image:loc>https://priyanshmathur.com/assets/og.jpg</image:loc><image:title>Priyansh Mathur</image:title></image:image>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://priyanshmathur.com/about/</loc></url>
+  <url><loc>https://priyanshmathur.com/contact/</loc></url>
+  <url><loc>https://priyanshmathur.com/</loc></url>
+  <url><loc>https://priyanshmathur.com/work/content-platform/</loc></url>
+  <url><loc>https://priyanshmathur.com/work/embedded-sdk/</loc></url>
+  <url><loc>https://priyanshmathur.com/work/search-growth/</loc></url>
+  <url><loc>https://priyanshmathur.com/work/</loc></url>
 </urlset>
